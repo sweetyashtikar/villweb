@@ -1,0 +1,67 @@
+/* Home.css */
+
+.welcome {
+  background-image: url("../image/img2.jpg"); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  background-color: rgba(51, 51, 51, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  animation: fadeInDown 1s ease-in-out;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.header p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin: 20px 0 10px 0;
+  animation: fadeIn 1s ease-in-out;
+  font-family: 'Times New Roman', serif;
+}
+
+.content .subtitle {
+  font-size: 24px;
+  margin: 0;
+  animation: fadeInUp 1.5s ease-in-out;
+  font-family: 'Georgia', serif;
+}
+
+.sub-div h1 {
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+  animation: fadeIn 1.5s ease-in-out;
+  font-family: 'Times New Roman', serif;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
