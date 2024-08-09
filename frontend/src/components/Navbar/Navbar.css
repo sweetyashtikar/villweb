@@ -43,4 +43,5 @@
 .navbar-link:hover {
   color: #f0a500;
   text-decoration: underline #00bfff;
+  transition: all 1s ease-in;
 }
