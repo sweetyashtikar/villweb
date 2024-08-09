@@ -8,7 +8,7 @@ const Home = () => {
         <p>Gold Valley, Sanaswadi, Maharashtra 402120</p>
       </div>
       <div className="content">
-        <h1>WELCOME to SWARU VILLA</h1>
+        <h1 style={{fontSize:"60px"}}>WELCOME TO SWARU VILLA</h1>
         <p className="subtitle">
           "ESCAPE the city hustle
           <br />

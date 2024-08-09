@@ -1,18 +1,35 @@
 /* Home.css */
 
 .welcome {
-  background-image: url("../image/img2.jpg"); /* Path to your image */
-  background-size: cover;
-  background-position: center;
+  position: relative; 
+  height: 100vh;
+  overflow: hidden; 
   color: white;
-  padding: 20px;
   text-align: center;
   font-family: 'Arial', sans-serif;
-  position: relative;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.welcome::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/img2.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px); 
+  z-index: 0; 
+}
+
+.header, .content, .sub-div {
+  position: relative;
+  z-index: 1; 
 }
 
 .header {
@@ -30,7 +47,9 @@
 }
 
 .content h1 {
-  font-size: 48px;
+  font-size: 88px;
+  color: orange;
+  font-family: sans-serif;
   margin: 20px 0 10px 0;
   animation: fadeIn 1s ease-in-out;
   font-family: 'Times New Roman', serif;
@@ -65,3 +84,6 @@
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Home.css */
+

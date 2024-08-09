@@ -1,7 +1,7 @@
 import React from 'react';
-import './Footer.css'; // Import the CSS file
-import { FaWhatsapp, FaInstagram, FaFacebookF, FaInternetExplorer } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaInternetExplorer, FaWhatsapp } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
+import './Footer.css'; // Import the CSS file
 
 const Footer = () => {
   return (
@@ -15,6 +15,7 @@ const Footer = () => {
         <p>Do click on the appropriate icon below to connect with us:</p>
         <p>Happy to connect with you through the following..</p>
       </div>
+      <div className='touch'>Get in Touch</div>
       <div className="contact">
         <div className="contact-item">
           <FaWhatsapp className="contact-icon whatsapp-icon"/>
@@ -22,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="contact-item">
           <FaInstagram className="contact-icon instagram-icon"/>
-          <p>@swaru_luxurious_villa</p>
+          <p>@swaru_luxurious</p>
         </div>
         <div className="contact-item">
           <FaFacebookF className="contact-icon facebook-icon"/>
@@ -37,6 +38,7 @@ const Footer = () => {
           <p>swaruvilla@gmail.com</p>
         </div>
       </div>
+      <div className='foot'>@CopyRight Swaru villa-4101011</div>
     </div>
   );
 }
