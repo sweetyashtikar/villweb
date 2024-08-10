@@ -1,12 +1,12 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
-import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Contact from './components/Pages/Contact';
 import Gallery from './components/Pages/Gallery';
+import Home from './components/Pages/Home';
 import Services from './components/Pages/Services';
-import Footer from './components/Footer/Footer'
 function App() {
   return (
     <div className="App">
